@@ -12,6 +12,6 @@ export function classNames(
   ].join(" ");
 }
 
-classNames("remove-btn", { hovered: true, selectable: true, red: false }, [
-  "withPadding",
-]);
+// classNames("remove-btn", { hovered: true, selectable: true, red: false }, [
+//   "withPadding",
+// ]);
