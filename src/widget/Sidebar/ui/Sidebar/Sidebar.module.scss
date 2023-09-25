@@ -11,10 +11,16 @@
   width: var(--sidebar-width-collapsed);
 }
 
+.switch_btn {
+  color: var(--inverted-secondary-color);
+}
+
 .switchers {
   position: absolute;
   bottom: 24px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   justify-content: center;
   width: 100%;
 }

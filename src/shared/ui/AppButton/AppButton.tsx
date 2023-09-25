@@ -11,7 +11,7 @@ interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: AppButtonVariant;
 }
 
-export const AppButton: FC<AppButtonProps> = (props) => {
+export const AppButton = (props: AppButtonProps) => {
   const { className, variant, children, ...otherProps } = props;
 
   return (
