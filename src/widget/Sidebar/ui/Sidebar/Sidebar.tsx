@@ -1,20 +1,20 @@
-import { classNames } from "shared/lib/classNames/classNames";
-import cls from "./Sidebar.module.scss";
-import { useState } from "react";
-import { ThemeSwitcher } from "feature/ThemeSwitcher";
-import { LangSwitcher } from "feature/LangSwitcher";
-import { AppButton } from "shared/ui/AppButton";
-import { AppButtonVariant } from "shared/ui/AppButton/AppButton";
-import { useTranslation } from "react-i18next";
+import { classNames } from 'shared/lib/classNames/classNames';
+import { useState, FC } from 'react';
+import { ThemeSwitcher } from 'feature/ThemeSwitcher';
+import { LangSwitcher } from 'feature/LangSwitcher';
+import { AppButton } from 'shared/ui/AppButton';
+import { AppButtonVariant } from 'shared/ui/AppButton/AppButton';
+import { useTranslation } from 'react-i18next';
+import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
-  className?: string;
+    className?: string;
 }
 
-export const Sidebar: React.FC<SidebarProps> = (props) => {
+export const Sidebar: FC<SidebarProps> = (props) => {
   const { className } = props;
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const { t, i18n } = useTranslation("");
+  const { t, i18n } = useTranslation('');
   const onToggle = () => {
     setIsCollapsed((prev) => !prev);
   };
@@ -30,7 +30,7 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
         variant={AppButtonVariant.CLEAR}
         onClick={onToggle}
       >
-        {t("switch")}
+        {t('switch')}
       </AppButton>
       <div className={cls.switchers}>
         <ThemeSwitcher />

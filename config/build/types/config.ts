@@ -1,7 +1,6 @@
-import webpack from "webpack";
-import { WebpackError } from "webpack";
+import webpack, { WebpackError } from 'webpack';
 
-type BuildMode = "development" | "production";
+type BuildMode = 'development' | 'production';
 
 export interface BuildPaths {
   entry: string;

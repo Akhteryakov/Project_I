@@ -1,8 +1,10 @@
-import { FC, useMemo, useState, ReactNode, createContext } from "react";
+import {
+  FC, useMemo, useState, ReactNode, createContext,
+} from 'react';
 
 export enum Theme {
-  LIGHT = "light",
-  DARK = "dark",
+  LIGHT = 'light',
+  DARK = 'dark',
 }
 
 export interface ThemContextProps {
@@ -12,10 +14,9 @@ export interface ThemContextProps {
 
 export const ThemeContext = createContext<ThemContextProps>({});
 
-export const LOCAL_STORAGE_THEM_KEY = "theme";
+export const LOCAL_STORAGE_THEM_KEY = 'theme';
 
-const defaultTheme =
-  (localStorage.getItem(LOCAL_STORAGE_THEM_KEY) as Theme) || Theme.LIGHT;
+const defaultTheme = (localStorage.getItem(LOCAL_STORAGE_THEM_KEY) as Theme) || Theme.LIGHT;
 
 type ThemeProviderProps = {
   children: ReactNode;
@@ -26,10 +27,10 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
 
   const defaultProps = useMemo(
     () => ({
-      theme: theme,
-      setTheme: setTheme,
+      theme,
+      setTheme,
     }),
-    [theme]
+    [theme],
   );
 
   return (
