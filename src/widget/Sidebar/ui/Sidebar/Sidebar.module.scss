@@ -1,9 +1,9 @@
 .Sidebar {
-  height: calc(100vh - var(--navbar-height));
-  width: var(--sidebar-width);
-  background-color: var(--inverted-bg-color);
   position: relative;
   flex-shrink: 0;
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--navbar-height));
+  background-color: var(--inverted-bg-color);
   transition: width 0.3s ease-in-out;
 }
 
