@@ -1,0 +1,26 @@
+.Sidebar {
+  position: relative;
+  flex-shrink: 0;
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--navbar-height));
+  background-color: var(--inverted-bg-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.switch_btn {
+  color: var(--inverted-secondary-color);
+}
+
+.switchers {
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+}
