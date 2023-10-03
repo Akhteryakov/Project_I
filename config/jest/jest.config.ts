@@ -4,6 +4,7 @@
  */
 
 import type { Config } from "jest";
+import path from "path";
 
 const config: Config = {
   // Automatically clear mock calls, instances, contexts and results before every test
@@ -16,7 +17,9 @@ const config: Config = {
   coveragePathIgnorePatterns: ["\\\\node_modules\\\\"],
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  moduleDirectories: ["node_modules"],
+  moduleDirectories: ["node_modules", "src"],
+
+  modulePaths: ["<rootDir>src"],
 
   // An array of file extensions your modules use
   moduleFileExtensions: [
@@ -95,7 +98,11 @@ const config: Config = {
   // maxWorkers: "50%",
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  // moduleNameMapper: {
+  //   "^.+\\.(css|less|scss)$": "identity-obj-proxy",
+  //   "\\.svg": path.resolve(__dirname, "jestEmptyComponent.tsx"),
+  //   "@/(.*)": "<rootDir>/src/$1",
+  // },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],

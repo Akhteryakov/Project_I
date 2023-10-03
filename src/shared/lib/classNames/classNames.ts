@@ -11,7 +11,3 @@ export function classNames(
     ...Object.keys(mods).filter((key) => mods[key]),
   ].join(" ");
 }
-
-// classNames("remove-btn", { hovered: true, selectable: true, red: false }, [
-//   "withPadding",
-// ]);
