@@ -1,9 +1,9 @@
-import { classNames } from 'shared/lib/classNames/classNames';
-import { ButtonHTMLAttributes, FC } from 'react';
-import cls from './AppButton.module.scss';
+import { classNames } from "shared/lib/classNames/classNames";
+import { ButtonHTMLAttributes, FC } from "react";
+import cls from "./AppButton.module.scss";
 
 export enum AppButtonVariant {
-  CLEAR = 'clear',
+  CLEAR = "clear",
 }
 
 interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -12,9 +12,7 @@ interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const AppButton = (props: AppButtonProps) => {
-  const {
-    className, variant, children, ...otherProps
-  } = props;
+  const { className, variant, children, ...otherProps } = props;
 
   return (
     <button
