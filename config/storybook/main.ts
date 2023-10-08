@@ -13,6 +13,7 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     "@storybook/addon-styling-webpack",
     "@storybook/addon-themes",
+    "storybook-react-i18next",
   ],
   docs: {
     autodocs: "tag",

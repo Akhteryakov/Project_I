@@ -5,9 +5,18 @@ import ThemeDecorator from "../../src/shared/config/storybook/ThemeDecorator/The
 import RouterDecorator from "../../src/shared/config/storybook/RouterDecorator/RouterDecorator";
 import { Theme } from "../../src/shared/context/theme-context/ThemeContext";
 import "../../src/app/styles/index.scss";
+import i18n from "./i18next";
 
 const preview: Preview = {
+  globals: {
+    locale: "ru",
+    locales: {
+      en: "English",
+      ru: "Русский",
+    },
+  },
   parameters: {
+    i18n,
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
