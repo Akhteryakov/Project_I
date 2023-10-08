@@ -35,9 +35,6 @@ const preview: Preview = {
         </ThemeDecorator>
       </RouterDecorator>
     ),
-
-    // @ts-ignore
-    // (Story) => ThemeDecorator(Theme.LIGHT)(Story),
   ],
 };
 

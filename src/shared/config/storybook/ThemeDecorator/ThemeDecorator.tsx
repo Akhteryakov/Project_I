@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import "app/styles/index.scss";
 import { Theme } from "shared/context";
 
 interface Props {

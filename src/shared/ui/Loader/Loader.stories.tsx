@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import ThemeDecorator from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import { Theme } from "shared/context";
-import "app/styles/index.scss";
 import { Loader } from "./Loader";
 
 const meta = {
-  title: "widget/Loader",
+  title: "shared/Loader",
   component: Loader,
 } satisfies Meta<typeof Loader>;
 

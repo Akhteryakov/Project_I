@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import "app/styles/index.scss";
+// import "app/styles/index.scss";
 
 interface Props {
   children?: React.ReactNode;
