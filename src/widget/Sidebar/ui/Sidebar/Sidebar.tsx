@@ -36,7 +36,7 @@ export const Sidebar: FC<SidebarProps> = (props) => {
       </AppButton>
       <div className={cls.switchers}>
         <ThemeSwitcher />
-        <LangSwitcher />
+        <LangSwitcher className={cls.LangSwitcherCollor} />
       </div>
     </div>
   );
