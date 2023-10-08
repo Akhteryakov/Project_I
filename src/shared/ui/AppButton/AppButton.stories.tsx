@@ -6,7 +6,7 @@ import { AppButtonVariant } from "./AppButton";
 import "app/styles/index.scss";
 
 const meta = {
-  // title: "shared/AppButton",
+  title: "shared/AppButton",
   component: AppButton,
 } satisfies Meta<typeof AppButton>;
 
