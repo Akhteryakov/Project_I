@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [main]
 jobs:
-  pipeline:
-    runs-on: macos-latest
+  CI:
+    runs-on: windows-2019
     strategy:
       matrix:
         node-version: [17.x]
