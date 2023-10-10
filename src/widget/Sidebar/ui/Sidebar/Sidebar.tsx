@@ -51,6 +51,7 @@ export const Sidebar: FC<SidebarProps> = (props) => {
           <span className={cls.navLink}>{t("о нас")}</span>
         </AppLink>
       </nav>
+      
       <AppButton
         data-testid="sidebar-toggle"
         className={cls.collapseBtn}
