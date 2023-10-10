@@ -1,9 +1,9 @@
-import { classNames } from 'shared/lib/classNames/classNames';
-import { useTheme } from 'shared/context';
-import ThemeIcon from 'shared/assets/icon/themeIcon.svg';
-import { AppButton } from 'shared/ui/AppButton';
-import { AppButtonVariant } from 'shared/ui/AppButton/AppButton';
-import cls from './ThemeSwitcher.module.scss';
+import { classNames } from "shared/lib/classNames/classNames";
+import { useTheme } from "shared/context";
+import ThemeIcon from "shared/assets/icons/themeIcon.svg";
+import { AppButton } from "shared/ui/AppButton";
+import { AppButtonVariant } from "shared/ui/AppButton/AppButton";
+import cls from "./ThemeSwitcher.module.scss";
 
 interface ThemeSwitcherProps {
   className?: string;
