@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { AppButton } from "shared/ui/AppButton";
 import ThemeDecorator from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import { Theme } from "shared/context";
-import { AppButtonVariant } from "./AppButton";
+import { AppButtonSize, AppButtonVariant } from "./AppButton";
 
 const meta = {
   title: "shared/AppButton",
@@ -29,6 +29,20 @@ export const Outline: Story = {
   },
 };
 
+export const OutlineSizeL: Story = {
+  args: {
+    variant: AppButtonVariant.OUTLINE,
+    size: AppButtonSize.L,
+  },
+};
+
+export const OutlineSizeXL: Story = {
+  args: {
+    variant: AppButtonVariant.OUTLINE,
+    size: AppButtonSize.XL,
+  },
+};
+
 export const OutlineDark: Story = {
   args: {
     variant: AppButtonVariant.OUTLINE,
@@ -40,4 +54,43 @@ export const OutlineDark: Story = {
       </ThemeDecorator>
     ),
   ],
+};
+
+export const Background: Story = {
+  args: {
+    variant: AppButtonVariant.BACKGROUND,
+  },
+};
+
+export const BackgroundInverted: Story = {
+  args: {
+    variant: AppButtonVariant.BACKGROUND_INVERTED,
+  },
+};
+
+export const SquareSizeM: Story = {
+  args: {
+    children: ">",
+    variant: AppButtonVariant.BACKGROUND_INVERTED,
+    square: true,
+    size: AppButtonSize.M,
+  },
+};
+
+export const SquareSizeL: Story = {
+  args: {
+    children: ">",
+    variant: AppButtonVariant.BACKGROUND_INVERTED,
+    square: true,
+    size: AppButtonSize.L,
+  },
+};
+
+export const SquareSizeXL: Story = {
+  args: {
+    children: ">",
+    variant: AppButtonVariant.BACKGROUND_INVERTED,
+    square: true,
+    size: AppButtonSize.XL,
+  },
 };

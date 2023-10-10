@@ -6,9 +6,10 @@ import cls from "./LangSwitcher.module.scss";
 
 interface LangSwitcherProps {
   className?: string;
+  short?: boolean;
 }
 
-export const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
   const { t, i18n } = useTranslation();
 
   const toggleLang = async () => {
@@ -17,8 +18,12 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
 
   return (
     <div className={classNames(cls.LangSwitcher, {}, [className])}>
-      <AppButton onClick={toggleLang} variant={AppButtonVariant.CLEAR}>
-        {t("Язык")}
+      <AppButton
+        className={cls.langSwitcherColor}
+        onClick={toggleLang}
+        variant={AppButtonVariant.CLEAR}
+      >
+        {t(short ? "shortLang" : "Язык")}
       </AppButton>
     </div>
   );

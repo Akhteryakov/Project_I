@@ -7,11 +7,10 @@
   transition: width 0.3s ease-in-out;
 }
 
-.collapsed {
-  width: var(--sidebar-width-collapsed);
-}
-
-.switch_btn {
+.collapseBtn {
+  position: absolute;
+  right: -40px;
+  bottom: 40px;
   color: var(--inverted-secondary-color);
 }
 
@@ -23,9 +22,36 @@
   gap: 8px;
   justify-content: center;
   width: 100%;
-  color: var(--inverted-primary-color);  
 }
 
-.LangSwitcherCollor{
-  color: var(--inverted-primary-color); 
+.nav{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0  0 16px;
 }
+
+.navItem {
+  display: flex;
+  align-items: center;
+  
+}
+
+.navLink {
+  margin-left: 8px;
+}
+
+.navIcon {
+  fill: var(--inverted-primary-color)
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+
+  .navLink {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+}
+
