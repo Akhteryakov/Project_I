@@ -42,6 +42,7 @@ module.exports = {
     "linebreak-style": "off",
     "jsx-a11y/click-events-have-key-events": "off", // потом убрать
     "jsx-a11y/no-static-element-interactions": "off", // потом убрать
+    "arrow-body-style": "off",
     // "i18next/recommended": ["error", { markupOnly: true }],
     "i18next/no-literal-string": [
       "error",
